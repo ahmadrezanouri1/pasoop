@@ -1,0 +1,151 @@
+
+@font-face {
+    font-family: lalezar;
+    src: url(fonts/lalezar.woff),
+    url(fonts/lalezar.ttf);
+  }
+  @font-face {
+    font-family: byekan;
+    src: url(fonts/Byekan.woff),
+    url(fonts/Byekan.ttf);
+  
+  }
+  ::selection{
+    background-color: #A8A4CE;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:#495C83 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: lalezar;
+}
+ /* style item container */
+.box{
+    width: 40%;
+    background-color:white ;
+    padding-top: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+.box h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 25px;
+    color:#A8A4CE;
+    
+} 
+
+input{
+    width: 100%;
+    height: 6vh;
+    border: 2px solid #495C83;
+    border-radius:10px;
+    font-family: lalezar;
+    padding-right: 10px;
+}
+input:focus{
+    border: 2px solid #A8A4CE;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: #C8B6E2;
+}
+/* style buttons */
+button{
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 50px;
+    padding: 1px;
+    border: .5px solid #495C83;
+    background-color: #A8A4CE;
+    color: #ffffff;
+    width: 100%;
+    height: 6vh;
+    font-size: 20px;
+    font-family: lalezar;
+    border-radius: 10px;
+
+}
+button:hover{
+    background-color: #ffffff;
+    color: #495C83;
+}
+
+/* style copyright  */
+.copyright{
+    width: 100%;
+    height: 10vh;
+    margin-top: 10vh;
+    background-color: #646FD4;
+    color: #DBDFFD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright  a{
+    font-size: 15px;
+    text-decoration: none;
+}
+.copyright  a:hover{
+    color: #A8A4CE;
+    
+}
+@media screen and (max-width : 600px){
+    .box{
+        width: 100vh;
+    }
+    .box h2{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .box{
+        width: 100vh;
+        margin: 20px;
+        margin-left: 20px;
+    }
+    .box h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 210px){
+    *{
+        font-size: 10px;
+    }
+    .box{
+        font-size: 10px;
+    }
+    input{
+        font-size: 10px;
+    }
+    input::placeholder{
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+    }
+    .copyright span{
+        font-size: 5px;
+    }
+    .copyright a{
+        font-size: 5px;
+    }
+}
